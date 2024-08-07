@@ -142,14 +142,49 @@ function showAlert() {
 }
 
 // send email
-function SendMail() {
+function showAlert() {
+  var alertBox = document.getElementById("customAlert");
+  var progressBar = document.getElementById("progressBar");
+  alertBox.style.display = "block";
+  progressBar.style.width = "100%";
+  
+  var width = 100;
+  var interval = setInterval(frame, 50);
+
+  function frame() {
+      if (width <= 0) {
+          clearInterval(interval);
+          alertBox.style.display = "none";
+      } else {
+          width--;
+          progressBar.style.width = width + '%';
+      }
+  }
+}
+
+function validateAndSendMail(event) {
+  event.preventDefault();
+  
+  var fullName = document.getElementById("fullName").value;
+  var emailId = document.getElementById("email_id").value;
+  var message = document.getElementById("message").value;
+  
+  if (!fullName || !emailId || !message) {
+    alert("Tutti i campi sono obbligatori.");
+    return false;
+  }
+
   var params = {
-      from_name : document.getElementById("fullName").value,
-      email_id : document.getElementById("email_id").value,
-      message : document.getElementById("message").value
+      from_name: fullName,
+      email_id: emailId,
+      message: message
   }
 
   emailjs.send("service_gy7ndzy", "template_8vy99xq", params).then(function() {
     showAlert();
-  })
+  }).catch(function(error) {
+    alert("Si è verificato un errore durante l'invio della mail: " + error.text);
+  });
+
+  return true;
 }

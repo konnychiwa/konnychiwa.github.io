@@ -5,12 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal website of Pamoda Angelo Konara">
-  <title>Pamoda Angelo Konara</title>
 
-  <meta property="og:title" content="Pamoda Angelo Konara">
-  <meta property="og:type" content="Sito Personale">
-  <meta property="og:image" content="/assets/images/me.png">
+  <title>Pamoda Angelo Konara</title>
+  <meta name="title" content="Pamoda Angelo Konara" />
+  <meta name="description" content="Personal website of Pamoda Angelo Konara" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://konnychiwa.github.io/" />
+  <meta property="og:title" content="Pamoda Angelo Konara" />
+  <meta property="og:description" content="Personal website of Pamoda Angelo Konara" />
+  <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://konnychiwa.github.io/" />
+  <meta property="twitter:title" content="Pamoda Angelo Konara" />
+  <meta property="twitter:description" content="Personal website of Pamoda Angelo Konara" />
+  <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
 
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
 
@@ -290,30 +301,30 @@
           <section class="slide">
             <div class="container">
                 <div class="scroller">
-                    <h6 class="item">HTML</h6>
-                    <h6 class="item">CSS</h6>
-                    <h6 class="item">JAVASCRIPT</h6>
-                    <h6 class="item"><s>WORDPRESS</s></h6>
-                    <h6 class="item"><s>VUE.JS</s></h6>
-                    <h6 class="item"><s>PHP</s></h6>
-                    <h6 class="item"><s>MYSQL</s></h6>
-                    <h6 class="item"><s>NODE.JS</s></h6>
-                    <h6 class="item">PYTHON</h6>
-                    <h6 class="item">C</h6>
-                    <h6 class="item">|</h6>
+                    <p class="item">HTML</p>
+                    <p class="item">CSS</p>
+                    <p class="item">JAVASCRIPT</p>
+                    <p class="item"><s>WORDPRESS</s></p>
+                    <p class="item"><s>VUE.JS</s></p>
+                    <p class="item"><s>PHP</s></p>
+                    <p class="item"><s>MYSQL</s></p>
+                    <p class="item"><s>NODE.JS</s></p>
+                    <p class="item">PYTHON</p>
+                    <p class="item">C</p>
+                    <p class="item">|</p>
                 </div>
                 <div class="scroller">
-                    <h6 class="item">HTML</h6>
-                    <h6 class="item">CSS</h6>
-                    <h6 class="item">JAVASCRIPT</h6>
-                    <h6 class="item"><s>WORDPRESS</s></h6>
-                    <h6 class="item"><s>VUE.JS</s></h6>
-                    <h6 class="item"><s>PHP</s></h6>
-                    <h6 class="item"><s>MYSQL</s></h6>
-                    <h6 class="item"><s>NODE.JS</s></h6>
-                    <h6 class="item">PYTHON</h6>
-                    <h6 class="item">C</h6>
-                    <h6 class="item">|</h6>
+                    <p class="item">HTML</p>
+                    <p class="item">CSS</p>
+                    <p class="item">JAVASCRIPT</p>
+                    <p class="item"><s>WORDPRESS</s></p>
+                    <p class="item"><s>VUE.JS</s></p>
+                    <p class="item"><s>PHP</s></p>
+                    <p class="item"><s>MYSQL</s></p>
+                    <p class="item"><s>NODE.JS</s></p>
+                    <p class="item">PYTHON</p>
+                    <p class="item">C</p>
+                    <p class="item">|</p>
                 </div>
             </div>
           </section>
@@ -383,23 +394,20 @@
 
           <h3 class="h3 form-title">Modulo di Contatto</h3>
 
-          <form class="form" data-form>
+          <form class="form" data-form onsubmit="return validateAndSendMail(event)">
 
             <div class="input-wrapper">
               <input type="text" id="fullName" class="form-input" placeholder="Nome Completo / Nome Azienda" required>
-
               <input type="email" id="email_id" class="form-input" placeholder="Email" required>
             </div>
-
+          
             <textarea id="message" class="form-input" placeholder="Il tuo messaggio" required></textarea>
-
-            <button onclick="SendMail()" class="form-btn">
+          
+            <button type="submit" class="form-btn">
               <ion-icon name="paper-plane"></ion-icon>
               <span>Invia Messaggio</span>
             </button>
-
-            <input type="text" class="hide" required>
-
+          
           </form>
 
           <div id="customAlert" class="alert">
