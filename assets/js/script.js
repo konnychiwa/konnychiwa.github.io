@@ -14,7 +14,6 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 
 // click button
 const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
 
 // modal variable
 const modalImg = document.querySelector("[data-modal-img]");
