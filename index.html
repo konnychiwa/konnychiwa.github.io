@@ -342,40 +342,55 @@
 
         <section class="projects">
 
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Tutti</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Siti Web</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applicazioni</button>
+            </li>
+
+          </ul>
+
           <div class="filter-select-box">
 
             <button class="filter-select" data-select>
 
+              <div class="select-value" data-selecct-value>Seleziona Categoria</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
             </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Tutti</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Siti Web</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applicazioni</button>
+              </li>
+
+            </ul>
 
           </div>
 
           <section class="portfolio-text">
             <p>Nessun progetto attuale.</p>
           </section>
-          
-          <!--<ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="" alt="" loading="">
-                </figure>
-
-                <h3 class="project-title"></h3>
-
-                <p class="project-category"></p>
-
-              </a>
-
-            </li>
-
-          </ul> -->
 
         </section>
 
